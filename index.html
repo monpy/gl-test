@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add a custom style layer</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      #background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      #line {
+        position: fixed;
+        right: 50%;
+        width: 1px;
+        height: 100%;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="background"></div>
+    <div id="map"></div>
+    <div id="line"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
